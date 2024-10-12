@@ -1,6 +1,13 @@
 import React from 'react';
-import { FaBars } from 'react-icons/fa';
+import { FaBars, FaBlogger, FaHome } from 'react-icons/fa';
 import { Link, NavLink } from 'react-router-dom';
+import iconImg from '../../../assets/botanical-capital-letter_53876-111467.jpg'
+import '../Navbar/Navbar.css'
+import { FaUser } from 'react-icons/fa6';
+import { RiContactsBook3Fill } from 'react-icons/ri';
+import { GrProjects } from 'react-icons/gr';
+import { TbLogs } from 'react-icons/tb';
+import { IoLinkSharp } from 'react-icons/io5';
 
 const Navbar = () => {
 
@@ -12,44 +19,40 @@ const Navbar = () => {
 
     return (
         <div>
-            <div className="navbar fixed z-10 opacity-70 text-white justify-between bg-[#480607] w-screen">
-                <div>
-                    <img className="w-12 rounded-full" src='' alt="" />
-                    <a className="btn btn-ghost text-2xl font-display">Dorm Dine</a>
-                </div>
-                <div className="dropdown dropdown-bottom dropdown-end md:hidden">
+            <div className="py-4 fixed z-10 bg-gray-700 bg-opacity-40 flex justify-around items-center text-white  w-screen">
+                {/* <div className="dropdown dropdown-bottom dropdown-end md:hidden">
                     <div tabIndex={0} role="button" className=""><FaBars></FaBars></div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 text-black rounded-box z-[1] w-60 p-2 shadow">
                         <li className="text-blue-800"><a>{links}</a></li>
                     </ul>
+                </div> */}
+                <div className='flex items-center gap-2'>
+                    <img className='w-8 border-2 rounded-full' src={iconImg} alt="" />
+                    <p className='cinzel text-xl font-bold'><span className='text-[#d36634]'>A</span>ny</p>
                 </div>
-                <div className="hidden md:flex gap-6">
-                    {links}
-                </div>
-                <div className="flex-none">
-                    <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
-                            <div className="indicator">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /></svg>
-                            </div>
-                        </div>
+                <div className="flex justify-center items-center gap-10 ">
+                    <div className="tooltip tooltip-bottom" data-tip="Home">
+                        <Link><button className="hover:text-[#d36634] text-xl"><FaHome></FaHome></button></Link>
                     </div>
-                    {/* {
-                        users ?
-                            <div className="dropdown dropdown-end">
-                                <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-10 rounded-full">
-                                        <img alt="Tailwind CSS Navbar component" src={users?.photoURL} />
-                                    </div>
-                                </div>
-                                <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-rose-100 rounded-box w-52">
-                                    <li><a className="text-black text-lg font-semibold hover:underline px-4 uppercase"><FaUser></FaUser>{users?.displayName}</a></li>
-                                    <Link to="/dashboard/userProfile"><a className="text-black text-lg font-semibold hover:underline px-4 flex items-center gap-2"><FaList></FaList>Dashboard</a></Link>
-                                    <Link to="/login"><div className="flex justify-center border-t-2 border-black border-dashed mx-4 mt-4 pt-2"><button onClick={handleLogOut} className="px-4 font-bold text-lg text-red-700 hover:underline">Log Out</button></div></Link>
-                                </ul>
-                            </div> :
-                            <Link to="/login"><button className="border-4 px-3 py-2 text-white rounded-xl ml-4 hover:font-extrabold">Join Us</button></Link>
-                    } */}
+                    <div className="tooltip tooltip-bottom" data-tip="About">
+                        <Link><button className="hover:text-[#d36634] text-lg"><FaUser></FaUser></button></Link>
+                    </div>
+                    <div className="tooltip tooltip-bottom" data-tip="Blogs">
+                        <Link><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
+                    </div>
+                    <div className="tooltip tooltip-bottom" data-tip="Projects">
+                        <Link><button className="hover:text-[#d36634] text-lg"><GrProjects /></button></Link>
+                    </div>
+                    <div className="tooltip tooltip-bottom" data-tip="Contacts">
+                        <Link><button className="hover:text-[#d36634] text-xl"><RiContactsBook3Fill /></button></Link>
+                    </div>
+                </div>
+                <div className="dropdown dropdown-bottom ">
+                    <div tabIndex={0} role="button" className="border-2 border-[#355e3b] rounded-full hover:text-[#d36634] text-xl p-2"><IoLinkSharp /></div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Item 1</a></li>
+                        <li><a>Item 2</a></li>
+                    </ul>
                 </div>
             </div>
         </div>

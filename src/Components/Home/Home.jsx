@@ -7,9 +7,9 @@ import '../../Components/Home/Home.css'
 const Home = () => {
     return (
         <div className='min-h-svh'>
-            <div className='bg-[#355e3b] p-12'>
+            <div className='bg-[#355e3b] '>
                 <Navbar></Navbar>
-                <div className='flex justify-between items-center'>
+                <div className='flex justify-between items-center px-14 py-28'>
                     <div className='text-white flex-1 space-y-4 playfair-display'>
                         <h1 className='font-bold text-4xl '>Hi! I'm Tahamina Haq Any, a</h1>
                         <h1 className='font-bold text-4xl cinzel'><span className='text-[#e9692c]'>Frontend</span> Web Developer</h1>
