@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+
+.clip {
+    clip-path: polygon(25% 0%, 75% 0%, 90% 50%, 75% 100%, 25% 100%, 10% 50%);
+}
+
+.playfair-display {
+    font-family: "Playfair Display", serif;
+}
+
+.cinzel {
+    font-family: "Cinzel", serif;
+}
