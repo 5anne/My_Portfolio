@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaBars, FaBlogger, FaHome } from 'react-icons/fa';
-import { Link, NavLink } from 'react-router-dom';
+import { FaGithub, FaHome, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 import iconImg from '../../../assets/botanical-capital-letter_53876-111467.jpg'
 import '../Navbar/Navbar.css'
 import { FaUser } from 'react-icons/fa6';
@@ -8,14 +8,11 @@ import { RiContactsBook3Fill } from 'react-icons/ri';
 import { GrProjects } from 'react-icons/gr';
 import { TbLogs } from 'react-icons/tb';
 import { IoLinkSharp } from 'react-icons/io5';
+import { MdMarkEmailUnread } from 'react-icons/md';
 
 const Navbar = () => {
 
-    const links = <>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/meals">Meals</NavLink>
-        <NavLink to="/upcomingMeals">Upcoming Meals</NavLink>
-    </>
+
 
     return (
         <div>
@@ -49,9 +46,10 @@ const Navbar = () => {
                 </div>
                 <div className="dropdown dropdown-bottom ">
                     <div tabIndex={0} role="button" className="border-2 border-[#355e3b] rounded-full hover:text-[#d36634] text-xl p-2"><IoLinkSharp /></div>
-                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
-                        <li><a>Item 1</a></li>
-                        <li><a>Item 2</a></li>
+                    <ul tabIndex={0} className="dropdown-content menu rounded-box z-[1] shadow text-xl gap-6">
+                        <a className='hover:text-[#d36634] pl-1 pt-4'><FaLinkedin></FaLinkedin></a>
+                        <a className='hover:text-[#d36634] pl-1'><FaGithub></FaGithub></a>
+                        <a className='hover:text-[#d36634] pl-1'><MdMarkEmailUnread /></a>
                     </ul>
                 </div>
             </div>
