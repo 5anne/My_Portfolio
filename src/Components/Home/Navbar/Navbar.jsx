@@ -38,7 +38,7 @@ const Navbar = () => {
                         <Link><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Projects">
-                        <Link><button className="hover:text-[#d36634] text-lg"><GrProjects /></button></Link>
+                        <Link to='/projects'><button className="hover:text-[#d36634] text-lg"><GrProjects /></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Contacts">
                         <Link><button className="hover:text-[#d36634] text-xl"><RiContactsBook3Fill /></button></Link>
