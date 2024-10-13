@@ -19,7 +19,8 @@ const Projects = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="">
-                        <h1 className="cinzel text-4xl font-bold border-b-2 border-[#e9692c] w-1/3 mx-auto my-28">Featured Projects</h1>
+                        <h1 className="cinzel text-4xl font-bold mt-28">Featured Projects</h1>
+                        <div className="flex justify-center"><p className="border w-40 border-[#e9692c] mt-6 mb-16"></p></div>
                         <div className="flex justify-evenly items-start gap-6 mb-16">
                             <div className="card glass w-96">
                                 <figure>

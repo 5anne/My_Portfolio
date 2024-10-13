@@ -6,6 +6,8 @@ import Root from './Root/Root'
 import Home from './Components/Home/Home'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
+import Contacts from './Components/Contacts/Contacts'
+import Blogs from './Components/Blogs/Blogs'
 
 const router = createBrowserRouter([
   {
@@ -21,8 +23,16 @@ const router = createBrowserRouter([
         element: <About></About>
       },
       {
+        path: '/blogs',
+        element: <Blogs></Blogs>
+      },
+      {
         path: '/projects',
         element: <Projects></Projects>
+      },
+      {
+        path: '/contacts',
+        element: <Contacts></Contacts>
       }
     ]
   },

@@ -35,21 +35,21 @@ const Navbar = () => {
                         <Link to='/about'><button className="hover:text-[#d36634] text-lg"><FaUser></FaUser></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Blogs">
-                        <Link><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
+                        <Link to='/blogs'><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Projects">
                         <Link to='/projects'><button className="hover:text-[#d36634] text-lg"><GrProjects /></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Contacts">
-                        <Link><button className="hover:text-[#d36634] text-xl"><RiContactsBook3Fill /></button></Link>
+                        <Link to='/contacts'><button className="hover:text-[#d36634] text-xl"><RiContactsBook3Fill /></button></Link>
                     </div>
                 </div>
                 <div className="dropdown dropdown-bottom ">
                     <div tabIndex={0} role="button" className="border-2 border-[#355e3b] rounded-full hover:text-[#d36634] text-xl p-2"><IoLinkSharp /></div>
                     <ul tabIndex={0} className="dropdown-content menu rounded-box z-[1] shadow text-xl gap-6">
-                        <a className='hover:text-[#d36634] pl-1 pt-4'><FaLinkedin></FaLinkedin></a>
-                        <a className='hover:text-[#d36634] pl-1'><FaGithub></FaGithub></a>
-                        <a className='hover:text-[#d36634] pl-1'><MdMarkEmailUnread /></a>
+                        <a href='https://www.linkedin.com/in/tahamina-haq-any-2b6884194/' className='hover:text-[#d36634] pl-1 pt-4'><FaLinkedin></FaLinkedin></a>
+                        <a href='https://github.com/5anne?tab=repositories' className='hover:text-[#d36634] pl-1'><FaGithub></FaGithub></a>
+                        <Link to='/contacts' className='hover:text-[#d36634] pl-1'><a><MdMarkEmailUnread /></a></Link>
                     </ul>
                 </div>
             </div>
