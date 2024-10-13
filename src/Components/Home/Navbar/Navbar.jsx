@@ -27,7 +27,7 @@ const Navbar = () => {
                     <img className='w-8 border-2 rounded-full' src={iconImg} alt="" />
                     <p className='cinzel text-xl font-bold'><span className='text-[#d36634]'>A</span>ny</p>
                 </div>
-                <div className="flex justify-center items-center gap-10 ">
+                <div className="flex justify-center items-center gap-4 md:gap-10 ">
                     <div className="tooltip tooltip-bottom" data-tip="Home">
                         <Link to='/'><button className="hover:text-[#d36634] text-xl"><FaHome></FaHome></button></Link>
                     </div>

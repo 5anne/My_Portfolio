@@ -11,8 +11,8 @@ const Home = () => {
         <div className='min-h-svh'>
             <div className='bg-[#355e3b] '>
                 <Navbar></Navbar>
-                <div className='flex justify-between items-center px-14 py-28'>
-                    <div className='text-white flex-1 space-y-4 playfair-display'>
+                <div className='md:flex justify-between items-center px-8 md:px-14 py-28'>
+                    <div className='text-white flex-1 space-y-4 playfair-display mb-10 md:mb-0'>
                         <h1 className='font-bold text-4xl '>Hi! I'm Tahamina Haq Any, a</h1>
                         <h1 className='font-bold text-4xl cinzel'><span className='text-[#e9692c]'>Frontend</span> Web Developer</h1>
                         <p className=''>I am a self-motivated and enthusiastic junior web developer looking for an internship opportunity to apply my knowledge and experience of 10 months in Web Development. I am eager to contribute to a collaborative team and learn from experienced developers.</p>

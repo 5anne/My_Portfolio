@@ -18,13 +18,13 @@ const Blogs = () => {
                 }}>
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
-                    <div className="w-3/5 mx-auto">
-                        <h1 className="text-4xl font-bold cinzel">My Services</h1>
+                    <div className="md:w-4/5 lg:w-3/5 mx-auto my-24">
+                        <h1 className="text-3xl md:text-4xl font-bold cinzel">My Services</h1>
                         <p className='border-b-2 border-[#e9692c] w-1/4 mx-auto my-5'></p>
                         <p className="mb-5 playfair-display flex">
                             <span className='text-[#e9692c] text-xl'><RiDoubleQuotesL /></span>As a dedicated web developer with [number] years of experience, I am passionate about crafting innovative and user-friendly web applications. My strong technical skills in [list of technologies] combined with my problem-solving abilities and creative mindset allow me to deliver high-quality solutions. I am a collaborative team player who thrives on learning and continuously strives to improve my skills. I am confident in my ability to contribute significantly to your team and help achieve your project goals.<span className='text-[#e9692c] text-xl'><RiDoubleQuotesR /></span>
                         </p>
-                        <div className='grid grid-cols-3 gap-6'>
+                        <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>
                             <div className='border-2 p-4 rounded-xl space-y-3 text-start'>
                                 <img className='w-12' src={webDevImg} alt="" />
                                 <h1 className='font-bold text-xl playfair-display'>Web Development</h1>

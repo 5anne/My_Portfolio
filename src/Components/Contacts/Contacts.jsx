@@ -19,7 +19,7 @@ const Contacts = () => {
                 <div className="hero-overlay bg-opacity-60"></div>
                 <div className="hero-content text-neutral-content text-center">
                     <div className="max-w-md">
-                        <h1 className="text-3xl lg:text-4xl font-semibold text-center cinzel py-8 mt-16">Contact With Me</h1>
+                        <h1 className="text-3xl md:text-4xl font-semibold text-center cinzel py-8 mt-16">Contact With Me</h1>
                         <div className="flex justify-center"><p className="border w-40 border-[#e9692c]"></p></div>
                         <div className="flex flex-col gap-8 mt-8">
                             <div className="h-full">

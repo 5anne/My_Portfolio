@@ -23,7 +23,7 @@ const Footer = () => {
                     <Link to='/contacts' className='hover:text-[#d36634]'><a className='text-xl'><MdMarkEmailUnread /></a></Link>
                 </div>
             </div>
-            <aside className='border-b-2 border-[#e9692c] pb-4 w-1/2 mx-auto'>
+            <aside className='border-b-2 border-[#e9692c] pb-4 w-[60%] mx-auto'>
                 <p>Copyright © {new Date().getFullYear()} - All right reserved by Tahamina Haq Any</p>
             </aside>
         </footer>
