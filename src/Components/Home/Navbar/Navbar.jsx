@@ -29,10 +29,10 @@ const Navbar = () => {
                 </div>
                 <div className="flex justify-center items-center gap-10 ">
                     <div className="tooltip tooltip-bottom" data-tip="Home">
-                        <Link><button className="hover:text-[#d36634] text-xl"><FaHome></FaHome></button></Link>
+                        <Link to='/'><button className="hover:text-[#d36634] text-xl"><FaHome></FaHome></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="About">
-                        <Link><button className="hover:text-[#d36634] text-lg"><FaUser></FaUser></button></Link>
+                        <Link to='/about'><button className="hover:text-[#d36634] text-lg"><FaUser></FaUser></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Blogs">
                         <Link><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
