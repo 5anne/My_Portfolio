@@ -15,7 +15,7 @@ const About = () => {
                         <h1 className="text-3xl md:text-4xl font-bold cinzel mt-16 md:mt-0">Why I'm the Right Fit</h1>
                         <p className='border-b-2 border-[#e9692c] w-1/4 mx-auto my-5'></p>
                         <p className="mb-5 playfair-display flex">
-                            <span className='text-[#e9692c] text-xl'><RiDoubleQuotesL /></span>As a dedicated web developer with [number] years of experience, I am passionate about crafting innovative and user-friendly web applications. My strong technical skills in [list of technologies] combined with my problem-solving abilities and creative mindset allow me to deliver high-quality solutions. I am a collaborative team player who thrives on learning and continuously strives to improve my skills. I am confident in my ability to contribute significantly to your team and help achieve your project goals.<span className='text-[#e9692c] text-xl'><RiDoubleQuotesR /></span>
+                            <span className='text-[#e9692c] text-xl'><RiDoubleQuotesL /></span>My technical skills in HTML5, CSS3, JavaScript, React.js, Node.js, Express.js, and MongoDB combined with my problem-solving abilities and creative mindset allow me to deliver qualitative solutions. I am a collaborative team player who thrives on learning and continuously strives to improve skills. I am confident that I can contribute significantly to your team and help achieve your project goals.<span className='text-[#e9692c] text-xl'><RiDoubleQuotesR /></span>
                         </p>
                         <div className='flex flex-col md:flex-row items-start gap-40 md:gap-80 lg:gap-96 mb-16'>
                             <div className="dropdown dropdown-open">
