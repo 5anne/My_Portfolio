@@ -2,7 +2,7 @@ import React from 'react';
 import { FaGithub, FaHome, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import iconImg from '../../../assets/botanical-capital-letter_53876-111467.jpg'
-import '../Navbar/Navbar.css'
+import '../../Home/Home.css'
 import { FaUser } from 'react-icons/fa6';
 import { RiContactsBook3Fill } from 'react-icons/ri';
 import { GrProjects } from 'react-icons/gr';
@@ -17,12 +17,6 @@ const Navbar = () => {
     return (
         <div>
             <div className="py-4 fixed z-10 bg-gray-700 bg-opacity-40 flex justify-around items-center text-white  w-screen">
-                {/* <div className="dropdown dropdown-bottom dropdown-end md:hidden">
-                    <div tabIndex={0} role="button" className=""><FaBars></FaBars></div>
-                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 text-black rounded-box z-[1] w-60 p-2 shadow">
-                        <li className="text-blue-800"><a>{links}</a></li>
-                    </ul>
-                </div> */}
                 <div className='flex items-center gap-2'>
                     <img className='w-8 border-2 rounded-full' src={iconImg} alt="" />
                     <p className='cinzel text-xl font-bold'><span className='text-[#d36634]'>A</span>ny</p>
@@ -34,8 +28,8 @@ const Navbar = () => {
                     <div className="tooltip tooltip-bottom" data-tip="About">
                         <Link to='/about'><button className="hover:text-[#d36634] text-lg"><FaUser></FaUser></button></Link>
                     </div>
-                    <div className="tooltip tooltip-bottom" data-tip="Blogs">
-                        <Link to='/blogs'><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
+                    <div className="tooltip tooltip-bottom" data-tip="Services">
+                        <Link to='/services'><button className="hover:text-[#d36634] text-xl"><TbLogs /></button></Link>
                     </div>
                     <div className="tooltip tooltip-bottom" data-tip="Projects">
                         <Link to='/projects'><button className="hover:text-[#d36634] text-lg"><GrProjects /></button></Link>

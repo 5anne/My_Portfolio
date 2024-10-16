@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../Home/Navbar/Navbar';
 import Footer from '../Home/Footer/Footer';
-import '../About/About.css'
+import '../Home/Home.css'
 import { RiDoubleQuotesL, RiDoubleQuotesR } from 'react-icons/ri';
 
 const About = () => {

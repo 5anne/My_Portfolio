@@ -4,7 +4,7 @@ import Footer from '../Home/Footer/Footer';
 import projectOne from '../../assets/Screenshot (11).png';
 import projectTwo from '../../assets/Screenshot (12).png';
 import projectThree from '../../assets/Screenshot (13).png';
-import '../Projects/Projects.css';
+import '../Home/Home.css'
 import { FaRightLong } from 'react-icons/fa6';
 
 const Projects = () => {
@@ -30,7 +30,7 @@ const Projects = () => {
                                 </figure>
                                 <div className="card-body">
                                     <h2 className="card-title">Groove Real Estate Inc.</h2>
-                                    <p>This is a website where a user can find relevant real estaste properties under an umbrella and book them. </p>
+                                    <p>This is a website where a user can find relevant real estate properties under an umbrella and book them. </p>
                                     <p className='text-start font-bold font-serif text-[#0d3838]'>Features:</p>
                                     <ol type='a' className='text-start'>
                                         <li>Login and Register</li>
@@ -74,7 +74,7 @@ const Projects = () => {
                                 </figure>
                                 <div className="card-body">
                                     <h2 className="card-title">Chakri Bazar.com</h2>
-                                    <p>In this website a user can find, add, update and delete jobs of any categories. It is basically focued on CRUD opertions.</p>
+                                    <p>In this website a user can find, add, update and delete jobs of any categories. It is basically focused on CRUD operations.</p>
                                     <p className='text-start font-bold font-serif text-[#0d3838]'>Features:</p>
                                     <ol type='a' className='text-start'>
                                         <li>CRUD operations</li>
