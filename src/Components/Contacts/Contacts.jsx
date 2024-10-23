@@ -16,6 +16,12 @@ const emailIds = {
 
 const Contacts = () => {
     const form = useRef();
+    const recipientEmail = 'b180501034@law.jnu.ac.bd';
+
+    const handleClick = () => {
+        const gmailUrl = `mailto:${recipientEmail}`;
+        window.open(gmailUrl);
+    };
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -66,7 +72,7 @@ const Contacts = () => {
                                         required />
                                     <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full text-black"
                                         type="number"
-                                        name='user_number'
+                                        name='from_number'
                                         placeholder="Your Phone Number"
                                         required />
                                     <input className="border-2 border-gray-500 rounded-lg p-2 pb-28 my-2 w-full text-black"
@@ -80,7 +86,7 @@ const Contacts = () => {
                             <div className="flex justify-center items-center gap-4 mb-16">
                                 <a href='https://www.linkedin.com/in/tahamina-haq-any-2b6884194/' className='hover:text-[#d36634] text-2xl'><FaLinkedin></FaLinkedin></a>
                                 <a href='https://github.com/5anne?tab=repositories' className='hover:text-[#d36634] text-2xl'><FaGithub></FaGithub></a>
-                                <Link to='/contacts'><a className='hover:text-[#d36634] text-2xl'><MdMarkEmailUnread /></a></Link>
+                                <Link onClick={handleClick}><a className='hover:text-[#d36634] text-2xl'><MdMarkEmailUnread /></a></Link>
                             </div>
                         </div>
                     </div>

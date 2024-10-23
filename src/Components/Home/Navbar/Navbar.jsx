@@ -11,8 +11,12 @@ import { IoLinkSharp } from 'react-icons/io5';
 import { MdMarkEmailUnread } from 'react-icons/md';
 
 const Navbar = () => {
+    const recipientEmail = 'b180501034@law.jnu.ac.bd';
 
-
+    const handleClick = () => {
+        const gmailUrl = `mailto:${recipientEmail}`;
+        window.open(gmailUrl);
+    };
 
     return (
         <div>
@@ -43,7 +47,7 @@ const Navbar = () => {
                     <ul tabIndex={0} className="dropdown-content menu rounded-box z-[1] shadow text-xl gap-6">
                         <a href='https://www.linkedin.com/in/tahamina-haq-any-2b6884194/' className='hover:text-[#d36634] pl-1 pt-4'><FaLinkedin></FaLinkedin></a>
                         <a href='https://github.com/5anne?tab=repositories' className='hover:text-[#d36634] pl-1'><FaGithub></FaGithub></a>
-                        <Link to='/contacts' className='hover:text-[#d36634] pl-1'><a><MdMarkEmailUnread /></a></Link>
+                        <Link onClick={handleClick} className='hover:text-[#d36634] pl-1'><a><MdMarkEmailUnread /></a></Link>
                     </ul>
                 </div>
             </div>

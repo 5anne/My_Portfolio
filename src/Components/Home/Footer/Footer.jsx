@@ -5,6 +5,13 @@ import { MdMarkEmailUnread } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+    const recipientEmail = 'b180501034@law.jnu.ac.bd';
+
+    const handleClick = () => {
+        const gmailUrl = `mailto:${recipientEmail}`;
+        window.open(gmailUrl);
+    };
+
     return (
         <footer className="footer footer-center bg-black text-white rounded p-10">
             <div className='flex justify-center items-center gap-2 border-b-2 border-[#e9692c] pb-4 w-1/2 mx-auto'>
@@ -20,7 +27,7 @@ const Footer = () => {
                 <div className="grid grid-flow-col gap-4">
                     <a href='https://www.linkedin.com/in/tahamina-haq-any-2b6884194/' className='hover:text-[#d36634] text-xl'><FaLinkedin></FaLinkedin></a>
                     <a href='https://github.com/5anne?tab=repositories' className='hover:text-[#d36634] text-xl'><FaGithub></FaGithub></a>
-                    <Link to='/contacts' className='hover:text-[#d36634]'><a className='text-xl'><MdMarkEmailUnread /></a></Link>
+                    <Link onClick={handleClick} className='hover:text-[#d36634]'><a className='text-xl'><MdMarkEmailUnread /></a></Link>
                 </div>
             </div>
             <aside className='border-b-2 border-[#e9692c] pb-4 w-[60%] mx-auto'>
