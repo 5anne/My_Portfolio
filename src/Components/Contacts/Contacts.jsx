@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import Navbar from '../Home/Navbar/Navbar';
 import Footer from '../Home/Footer/Footer';
 import '../Home/Home.css'
@@ -6,8 +6,38 @@ import { FaRightLong } from 'react-icons/fa6';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { MdMarkEmailUnread } from 'react-icons/md';
 import { Link } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
+
+const emailIds = {
+    service_id: import.meta.env.VITE_SERVICE_ID,
+    template_id: import.meta.env.VITE_TEMPLATE_ID,
+    public_key: import.meta.env.VITE_PUBLIC_KEY
+}
 
 const Contacts = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        const { service_id, template_id, public_key } = emailIds;
+
+        emailjs
+            .sendForm(service_id, template_id, form.current, {
+                publicKey: public_key,
+            })
+            .then(
+                () => {
+                    alert('Email has been sent successfully!');
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    alert('Failed to send email', error.message);
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
     return (
         <div>
             <Navbar></Navbar>
@@ -23,11 +53,27 @@ const Contacts = () => {
                         <div className="flex justify-center"><p className="border w-40 border-[#e9692c]"></p></div>
                         <div className="flex flex-col gap-8 mt-8">
                             <div className="h-full">
-                                <form>
-                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full" type="text" placeholder="Your Name" />
-                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full" type="email" placeholder="Your Email" />
-                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full" type="number" placeholder="Your Phone Number" />
-                                    <input className="border-2 border-gray-500 rounded-lg p-2 pb-28 my-2 w-full" type="text" placeholder="Write Message" />
+                                <form ref={form} onSubmit={sendEmail}>
+                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full text-black"
+                                        type="text"
+                                        name='from_name'
+                                        placeholder="Your Name"
+                                        required />
+                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full text-black"
+                                        type="email"
+                                        name='from_email'
+                                        placeholder="Your Email"
+                                        required />
+                                    <input className="border-2 border-gray-500 rounded-lg p-2 my-2 w-full text-black"
+                                        type="number"
+                                        name='user_number'
+                                        placeholder="Your Phone Number"
+                                        required />
+                                    <input className="border-2 border-gray-500 rounded-lg p-2 pb-28 my-2 w-full text-black"
+                                        type="text"
+                                        name='message'
+                                        placeholder="Write Message"
+                                        required />
                                     <button className="bg-cyan-950 px-4 py-2 flex justify-center items-center gap-3 text-white rounded-md w-full hover:bg-cyan-800">Let's Talk <FaRightLong></FaRightLong></button>
                                 </form>
                             </div>

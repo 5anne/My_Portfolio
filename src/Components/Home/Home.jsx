@@ -17,7 +17,7 @@ const Home = () => {
                         <h1 className='font-bold text-4xl cinzel'><span className='text-[#e9692c]'>Frontend</span> Web Developer</h1>
                         <p className=''>I am a passionate front-end developer  with a foundation in JavaScript and web technologies such as HTML5, CSS3, and React.js. I specialize in crafting user-friendly web applications. My full-stack experience includes Back-End development using Node.js, Express.js, and MongoDB, enabling me to deliver complete web solutions.</p>
                         <div className='flex items-center gap-4'>
-                            <a href="https://drive.google.com/file/d/18uP6PT0Thse5Rp0quXeC3PAXqWEYZIU0/view?usp=drive_link"><button className='btn bg-[#e9692c] font-bold text-white text-center border-none rounded-none flex items-center gap-2'><FaDownload></FaDownload> Download Resume</button></a>
+                            <a href="https://drive.google.com/file/d/1noSZbyATOYiLCFxpBfHkVJgQcNtRarHv/view?usp=sharing"><button className='btn bg-[#e9692c] font-bold text-white text-center border-none rounded-none flex items-center gap-2'><FaDownload></FaDownload> Download Resume</button></a>
                             <Link to='/contacts'><button className='btn bg-[#355e3b] font-bold text-white text-center border-2 border-[#e9692c] rounded-none flex items-center gap-2'><FaPhone></FaPhone> Contacts</button></Link>
                         </div>
                     </div>
