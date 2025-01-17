@@ -21,11 +21,11 @@ const About = () => {
                             <div className="dropdown dropdown-open">
                                 <div tabIndex={0} role="button" className="playfair-display text-2xl border-b-2 border-[#e9692c]">Skills</div>
                                 <ul tabIndex={0} className="dropdown-content menu text-start playfair-display w-[350px] md:w-[400px]">
-                                    <li>Languages: JavaScript </li>
-                                    <li>Frontend: HTML, CSS, React.js </li>
+                                    <li>Languages: JavaScript, C, C++ </li>
+                                    <li>Frontend: HTML, CSS, React.js, Next.js </li>
                                     <li>Backend: Node.js, Express.js, MongoDB </li>
                                     <li>Frameworks: Tailwind CSS </li>
-                                    <li>Tools: Visual Studio Code, Dev Tool, React Dev Tool, GitHub </li>
+                                    <li>Tools: Visual Studio Code, Dev Tool, React Dev Tool, Git </li>
                                     <li>Deployment: Netlify, Firebase, and Vercel </li>
                                 </ul>
                             </div>
